@@ -1,0 +1,46 @@
+section.background-relogio-preto{
+  position: relative;
+  background: var(--black-escuro);
+  display: flex;
+  justify-content: flex-start;
+  z-index:777;
+}
+.relogio-preto{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  width: 40rem; 
+  height: auto;  
+  margin-left: 8rem;
+  z-index: 888;
+}
+
+section.background-dados{
+  position: relative;
+  background: var(--white);
+  display: flex;
+  justify-content: flex-end;
+}
+.relogio-dados{
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 40rem; 
+  height: auto; 
+  object-fit: cover; 
+}
+
+p.text-relogio-preto{
+  font-size: 1rem;
+  font-weight: 400;
+  color: var(--white);
+  line-height: 1.5rem;
+  max-width: 35rem;
+}
+
+div.paragrafo-relogio-preto{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
