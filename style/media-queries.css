@@ -246,11 +246,18 @@
         border: 1px solid var(--green);
         width: 14rem;
     }
-
-    .chamada a {
+    .logo {
+        position: absolute;
+        left: 48.5%;
+        bottom: 42rem;
+      }
+      
+      .chamada a {
+        position: absolute;
+        bottom: 43rem;
         right: 0rem;
         font-size: 1.1rem;
         padding: 0rem 1rem;
-    }
+      }
 
 }
