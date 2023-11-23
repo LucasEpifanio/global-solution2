@@ -1,0 +1,53 @@
+section.background-relogio-preto {
+  position: relative;
+  background: var(--black-dark);
+  background-image: url(../assets/clock-3309121_1920.jpg);
+  background-position: left;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 38rem;
+  max-width: 100%;
+  height: auto;
+  padding: 8rem 3rem;
+}
+
+section.background-dados {
+  position: relative;
+  background: var(--white);
+  background-position: right;
+  background-repeat: no-repeat;
+  object-fit: cover;
+  background-size: 38rem;
+  max-width: 100%;
+  height: auto;
+  background-image: url(../assets/clock-7708859_1280.jpg);
+  padding: 8rem 6rem;
+}
+
+p.text-relogio-preto {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--white);
+  line-height: 1.5rem;
+  max-width: 40rem;
+}
+
+div.paragrafo-relogio-preto {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+p.text-relogio-dados {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--black-dark);
+  line-height: 1.5rem;
+  max-width: 44rem;
+}
+
+div.paragrafo-relogio-dados {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}

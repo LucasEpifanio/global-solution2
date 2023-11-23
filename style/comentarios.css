@@ -1,0 +1,150 @@
+section.comentarios {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 1rem;
+  height: auto;
+  width: 100%;
+  background-color: var(--medium-white);
+  padding: 2rem 1rem;
+}
+
+.comentarios h3 {
+  font-size: 1.8rem;
+  padding: 1rem;
+}
+
+.discussion {
+  background-color: var(--white);
+  border-radius: 0.5rem;
+  margin-top: 16px;
+  padding-bottom: 0.5rem;
+  width: 100%;
+  max-width: 35rem;
+  box-shadow: rgba(7, 51, 28, 0.2) 0px 7px 29px 0px;
+}
+
+.discussion__header {
+  background-color: var(--white);
+  border-bottom: 1px solid var(--white);
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 1rem 1rem 0 0;
+  overflow: hidden;
+  padding: 1rem;
+  width: 100%;
+  box-shadow: rgba(9, 55, 222, 0.2) 0px 7px 29px 0px;
+}
+
+.discussion__header textarea {
+  border: 1px solid var(--green);
+  padding: 8px;
+  border-radius: 0.3rem;
+  height: 3.5rem;
+  transition: height 0.4s ease-in-out;
+  resize: none;
+  width: 100%;
+}
+
+.discussion__header textarea:focus {
+  outline: none;
+  height: 6rem;
+  border: 1px solid var(--blue);
+}
+
+.authed-user {
+  display: flex;
+  flex-direction: column;
+}
+
+.authed-user input {
+  padding: 0.3rem;
+  margin-bottom: 0.7rem;
+  border-radius: 0.3rem;
+  border: 1px solid var(--green);
+  width: 22rem;
+}
+
+.authed-user input:focus {
+  outline: none;
+  border: 1px solid var(--blue);
+}
+
+.authed-user label {
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.4rem 0;
+}
+
+.newcomment__toolbar {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 0.8rem;
+  padding: 0.4rem;
+}
+
+.newcomment__toolbar button {
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.comment {
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+  gap: 8px;
+  border-bottom: 1px solid var(--white-dark);
+}
+
+.button--primary {
+  background-color: var(--green);
+  color: var(--white);
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.button--primary:hover {
+  background-color: var(--green-light);
+}
+
+.button--secondary {
+  font-size: 0.9rem;
+  font-weight: 300;
+  transition: 0.3s ease;
+}
+
+.button--secondary:hover {
+  background-color: var(--blue);
+  color: var(--white);
+}
+
+#comment-input {
+  font-size: 0.9rem;
+}
+
+.avatar-label {
+  cursor: pointer;
+}
+
+.avatar {
+  border-radius: 5rem;
+  width: 2.2rem;
+  height: 2.2rem;
+  object-fit: cover;
+  margin-left: 8px;
+}
+
+label.avatar-label {
+  display: flex;
+  flex-direction: column;
+  width: 8rem;
+}
+
+#avatar-preview {
+  cursor: pointer;
+}

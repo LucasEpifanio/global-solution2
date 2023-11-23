@@ -1,0 +1,74 @@
+section.section-captacao {
+    position: relative;
+    background-repeat: no-repeat;
+    object-fit: cover;
+    background-size: 100%;
+    max-width: 100%;
+    height: auto;
+    background-image: url(../assets/pexels-panumas-nikhomkhai-1148820.jpg);
+}
+
+.captacao-background {
+    background: rgba(0, 0, 0, 0.422);
+    width: 100%;
+    height: 100%;
+    padding: 4rem 0rem;
+}
+
+h3.titulo-captacao {
+    font-size: 2.1rem;
+    color: var(--white);
+}
+
+img.icon-captacao {
+    width: 4rem;
+    height: 4rem;
+    margin-left: -2.5rem;
+}
+
+p.text-captacao {
+    font-size: 1.1rem;
+    font-weight: 500;
+    color: var(--white);
+    max-width: 55rem;
+    padding: 0rem 0rem 0rem 5rem;
+}
+
+div.captacao {
+    display: flex;
+    justify-content: center;
+}
+
+div.text-captacao-secao-1 p {
+    background: rgba(23, 185, 77, 0.522);
+    color: var(--white);
+    padding: 1.2rem 2.4rem;
+    border-radius: 1rem;
+    max-width: 18rem;
+    font-weight: 500;
+}
+
+div.text-captacao-secao-2 p {
+    background: rgba(23, 185, 77, 0.522);
+    color: var(--white);
+    padding: 1.2rem 2.4rem;
+    border-radius: 1rem;
+    max-width: 18rem;
+    font-weight: 500;
+}
+
+div.text-captacao-secao-3 p {
+    background: rgba(23, 185, 77, 0.522);
+    color: var(--white);
+    padding: 1.2rem 2.4rem;
+    border-radius: 1rem;
+    max-width: 18rem;
+    font-weight: 500;
+}
+
+.text-captacao-secao {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    padding: 4rem 0rem 0rem 0rem;
+}

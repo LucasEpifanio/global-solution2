@@ -1,0 +1,271 @@
+/* Adaptações para telas menores que 880px */
+@media (max-width: 1280px) {
+    .titulo img {
+        width: 35rem;
+    }
+
+    section.background-relogio-home {
+        background-size: 72rem;
+    }
+
+    p.text-relogio-preto {
+        max-width: 35rem;
+    }
+
+    p.text-relogio-dados {
+        max-width: 30rem;
+    }
+
+    section.background-dados {
+        background-size: 38rem;
+        padding: 7rem 6rem;
+    }
+
+    p.text-captacao {
+        max-width: 45rem;
+    }
+
+    h3.titulo-captacao {
+        font-size: 2rem;
+    }
+}
+
+
+
+
+
+@media (max-width: 780px) {
+    .footer-top {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding: 16px 8px 32px 8px;
+    }
+
+    .footer-bottom {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: space-between;
+        justify-content: center;
+        margin: 0 auto;
+    }
+
+    div.footer-wrapper {
+        padding-left: 5.8rem;
+    }
+
+    section.comentarios {
+        padding-left: 5.8rem;
+        padding-right: 1.2rem;
+    }
+
+    div.captacao {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    h3.titulo-captacao {
+        text-align: center;
+        padding-left: 5.8rem;
+        padding-bottom: 2rem;
+    }
+
+    img.icon-captacao {
+        display: none;
+    }
+
+    p.text-captacao {
+        text-align: center;
+        max-width: 35rem;
+        padding-right: 1rem;
+    }
+
+    .text-captacao-secao {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        padding-left: 5rem;
+    }
+
+    section.section-captacao {
+        background-image: none;
+    }
+
+    .captacao-background {
+        background: var(--blue);
+    }
+
+    .tabs-container {
+        width: 100%;
+        max-width: 450px;
+        max-height: 66rem;
+        margin-left: 5rem;
+        flex-direction: column;
+    }
+
+    .tab-content p {
+        width: 22rem;
+    }
+
+    section.section-tabs {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 145vh;
+        padding: 16px;
+    }
+
+    .tab-content img {
+        max-width: 15rem;
+        width: 80%;
+        flex-grow: 1;
+        padding-top: 1rem;
+    }
+
+    p.text-relogio-preto {
+        max-width: 42rem;
+        text-align: center;
+        align-items: center;
+        padding-top: 13rem;
+        padding-left: 4rem;
+    }
+
+    p.text-relogio-dados {
+        max-width: 42rem;
+        text-align: center;
+        align-items: center;
+        padding-top: 16rem;
+        padding-left: 4.5rem;
+    }
+
+    section.background-dados {
+        background-size: 38rem;
+    }
+
+    section.background-relogio-preto {
+        background-position: top;
+        background-position-x: center;
+        background-size: 28rem;
+        padding: 4rem 3rem;
+    }
+
+    section.background-dados {
+        background-position: top;
+        background-size: 25rem;
+        padding: 2rem 2rem;
+    }
+
+    .titulo img {
+        width: 28rem;
+        padding-left: 5rem;
+    }
+
+    section.background-relogio-home {
+        background-size: 62rem;
+    }
+
+    .logo {
+        position: absolute;
+        left: 45.5%;
+        bottom: 47rem;
+    }
+
+    .chamada a {
+        position: absolute;
+        bottom: 48rem
+    }
+}
+
+
+
+
+@media (max-width: 480px) {
+    .titulo img {
+        width: 24rem;
+        padding-left: 7rem;
+    }
+
+    section.background-relogio-home {
+        background-size: 40rem;
+    }
+
+    .chamada a {
+        bottom: 48.5rem;
+        right: 0.5rem;
+    }
+
+    .circle {
+        position: absolute;
+        left: -10rem;
+        bottom: -17rem;
+    }
+
+    .circle div {
+        width: 24rem;
+        height: 28rem;
+        background-color: var(--green-light);
+        border-radius: 50%;
+    }
+
+    .tabs a {
+        font-size: 14px;
+        font-weight: 600;
+        height: 80px;
+        padding: 0px 12px;
+        width: 225px;
+        align-items: center;
+        gap: 2px;
+    }
+
+    .tab-content img {
+        max-width: 9.8rem;
+        padding-top: 0.5rem;
+    }
+
+    .tab-content-wrapper {
+        padding: 8px 8px;
+    }
+
+    .tab-content p {
+        width: 14rem;
+    }
+
+    .tab-content h2 {
+        width: 14rem;
+    }
+
+    div.text-captacao-secao-1 p {
+        max-width: 15rem;
+    }
+
+    div.text-captacao-secao-2 p {
+        max-width: 15rem;
+
+    }
+
+    div.text-captacao-secao-3 p {
+        max-width: 15rem;
+    }
+
+    .comentarios h3 {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+
+    .authed-user input {
+        padding: 0.3rem;
+        margin-bottom: 0.7rem;
+        border-radius: 0.3rem;
+        border: 1px solid var(--green);
+        width: 14rem;
+    }
+
+    .logo {
+        position: absolute;
+        left: 42.5%;
+        bottom: 47rem;
+    }
+}

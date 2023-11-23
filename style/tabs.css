@@ -1,0 +1,102 @@
+section.section-tabs {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 16px;
+}
+
+.tabs-container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    margin: 10px;
+    overflow: hidden;
+    border-radius: 16px;
+    background-color: var(--white);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.tab-content-wrapper {
+    overflow-y: hidden;
+    overflow-x: auto;
+    height: 540px;
+    min-width: 300px;
+    color: var(--black);
+    transition: all 0.45s ease-in-out;
+    padding: 12px 24px;
+}
+
+.tab-content h2 {
+    color: var(--green);
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-top: 0px;
+    margin-bottom: 8px;
+}
+
+.tab-content {
+    display: block;
+    font-size: 1rem;
+    padding: 24px 8px;
+    width: 400px;
+    height: 540px;
+    transition: all 0.45s ease-in-out;
+}
+
+.tab-content img {
+    max-width: 17rem;
+    width: 80%;
+    flex-grow: 1;
+    padding-top: 1rem;
+}
+
+.tabs {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+}
+
+.tabs a {
+    position: relative;
+    display: flex;
+    text-decoration: none;
+    width: 100%;
+    font-size: 18px;
+    font-weight: 600;
+    color: #777777;
+    overflow: hidden;
+    text-align: left;
+    justify-content: start;
+    height: 90px;
+    padding: 0px 24px;
+    width: 350px;
+    align-items: center;
+    gap: 16px;
+}
+
+.tabs a img {
+    height: 20px;
+    width: 20px;
+}
+
+.tabs .active,
+.tabs a:hover {
+    font-weight: 700;
+    outline: none;
+    color: var(--green);
+    border-right: 3px solid var(--green);
+}
+
+
+.tabs a svg {
+    width: 36px;
+    height: 36px;
+    stroke: #777777;
+}
+
+.tabs .active svg,
+.tabs a:hover svg {
+    stroke: var(--green);
+}

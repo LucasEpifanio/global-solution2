@@ -3,24 +3,26 @@
 
 <head>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Smartwatch de Saúde</title>
   <link rel="shortcut icon" href="./assets/logo-branco.png" type="image/x-icon" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="./reset.css">
-  <link rel="stylesheet" href="./navbar.css">
-  <link rel="stylesheet" href="./banner-home.css">
-  <link rel="stylesheet" href="./banner-preto-branco.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=K2D:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="./style/reset.css">
+  <link rel="stylesheet" href="./style/navbar.css">
+  <link rel="stylesheet" href="./style/banner-home.css">
+  <link rel="stylesheet" href="./style/banner-preto-branco.css">
+  <link rel="stylesheet" href="./style/tabs.css">
+  <link rel="stylesheet" href="./style/banner-captacao.css">
+  <link rel="stylesheet" href="./style/comentarios.css">
+  <link rel="stylesheet" href="./style/media-queries.css">
+  <link rel="stylesheet" href="./style/footer.css">
 </head>
 
 <body class="collapsed">
-  <div class="logo">
-    <img class="logo-principal" src="./assets/logo-branco.png">
-  </div>
-
-  <div class="chamada"><a href="https://youtu.be/BmXnOV6RDwY" target="_blank">Chamada</a>
-  </div>
   <nav>
     <div class="sidebar-top">
       <div class="expand-btn">
@@ -30,35 +32,35 @@
     <div class="sidebar-links">
       <ul>
         <li>
-          <a href="./index.html" title="Home" class="tooltip">
+          <a href="./index.html" title="Home" class="tooltip" class="tooltip active">
             <img src="./assets/construcao-de-casas.png" alt="Home">
             <span class="link hide">Home</span>
             <span class="tooltip__content">Home</span>
           </a>
         </li>
         <li>
-          <a href="#Mortalidade Infantil" title="Mortalidade Infantil" class="tooltip">
+          <a href="./reducao-da-mortalidade-infantil.html" title="Mortalidade Infantil" class="tooltip">
             <img src="./assets/descer.png" alt="Mortalidade Infantil">
             <span class="link hide">Redução da Mortalidade Infantil</span>
             <span class="tooltip__content">Mortalidade Infantil</span>
           </a>
         </li>
         <li>
-          <a href="#doenças transmissíveis" title="doenças transmissíveis" class="tooltip">
+          <a href="./doencas-transmissiveis.html" title="doenças transmissíveis" class="tooltip">
             <img src="./assets/covid-19.png" alt="doenças transmissíveis">
             <span class="link hide">Doenças transmissíveis</span>
             <span class="tooltip__content">Doenças transmissíveis</span>
           </a>
         </li>
         <li>
-          <a href="#doenças não transmissíveis" title="doenças não transmissíveis" class="tooltip">
+          <a href="./doencas-nao-transmissiveis.html" title="doenças não transmissíveis" class="tooltip">
             <img src="./assets/nao-toque.png" alt="doenças não transmissíveis">
             <span class="link hide">Doenças não transmissíveis</span>
             <span class="tooltip__content">Doenças não transmissíveis</span>
           </a>
         </li>
         <li>
-          <a href="#Melhoria Geral da Saúde" title="Melhoria Geral da Saúde" class="tooltip">
+          <a href="./melhoria-geral-da-saude.html" title="Melhoria Geral da Saúde" class="tooltip">
             <img src="./assets/farmacia.png" alt="Melhoria Geral da Saúde">
             <span class="link hide">Melhoria geral da Saúde</span>
             <span class="tooltip__content">Melhoria geral da Saúde</span>
@@ -69,41 +71,443 @@
   </nav>
 
   <section class="background-relogio-home">
-    <img class="relogio-home" src="./assets/background-relogio-home.png">
     <div class="titulo">
       <h1><img src="./assets/title.svg"></h1>
+    </div>
+    <div class="logo">
+      <img class="logo-principal" src="./assets/logo-branco.png">
+    </div>
+    <div class="chamada"><a href="https://youtu.be/BmXnOV6RDwY" target="_blank">Chamada</a>
     </div>
     <div class="circle">
       <div></div>
     </div>
-
-    <div class="arrow-container">
+    <div class="arrow-container"><a href="#tecnologia">
       <div class="circle-seta">
         <div class="arrow"></div>
       </div>
       <div class="text">Tecnologia</div>
+    </a>
     </div>
-  
+
   </section>
 
-    <section class="background-relogio-preto">
-      <img class="relogio-preto" src="./assets/clock-3309121_1920.jpg">
-      <div class="paragrafo-relogio-preto">
-        <p class="text-relogio-preto">Um avançado smartwatch de saúde, cuidadosamente 
-          projetado para atender às necessidades exclusivas da 
-          rede privada de saúde, utilizando tecnologias de ponta como 
-          machine learning e inteligência artificial. Este dispositivo vai 
-          além do convencional, sendo uma extensão personalizada do
-          cuidado médico. Melhorando a relação entre pacientes e 
-          profissionais de saúde.
+  <section class="background-relogio-preto">
+    <div class="paragrafo-relogio-preto">
+      <p class="text-relogio-preto">Um avançado smartwatch de saúde, cuidadosamente
+        projetado para atender às necessidades exclusivas da
+        rede privada de saúde, utilizando tecnologias de ponta como
+        machine learning e inteligência artificial. Este dispositivo vai
+        além do convencional, sendo uma extensão personalizada do
+        cuidado médico. Melhorando a relação entre pacientes e
+        profissionais de saúde.
+      </p>
+    </div>
+  </section>
+
+  <section class="background-dados">
+    <div class="paragrafo-relogio-dados">
+      <p class="text-relogio-dados">
+        O smartwatch é uma peça-chave na coleta de dados de
+        saúde personalizados, respondendo às necessidades
+        específicas do médico. Ele monitora continuamente uma
+        variedade de parâmetros, como ritmo cardíaco, pressão
+        arterial, glicose, oxigenação no sangue, e outros indicadores
+        essenciais. Esses dados são registrados minuciosamente no
+        aplicativo por meio de conexão Bluetooth, formando um mapa
+        detalhado dos sintomas do usuário.
+      </p>
+    </div>
+  </section>
+
+  <section class="section-tabs" id="tecnologia">
+    <div class="tabs-container">
+      <ul class="tabs">
+        <li>
+          <a id="tab1" title="Coleta de Dados de Saúde " href="#tab1">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-database-import" width="24"
+              height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M4 6c0 1.657 3.582 3 8 3s8 -1.343 8 -3s-3.582 -3 -8 -3s-8 1.343 -8 3" />
+              <path d="M4 6v6c0 1.657 3.582 3 8 3c.856 0 1.68 -.05 2.454 -.144m5.546 -2.856v-6" />
+              <path d="M4 12v6c0 1.657 3.582 3 8 3c.171 0 .341 -.002 .51 -.006" />
+              <path d="M19 22v-6" />
+              <path d="M22 19l-3 -3l-3 3" />
+            </svg>
+            Coleta de Dados de Saúde
+          </a>
+        </li>
+        <li>
+          <a id="tab2" title="Mapa de Monitoramento" href="#tab2">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map" width="24" height="24"
+              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 7l6 -3l6 3l6 -3v13l-6 3l-6 -3l-6 3v-13" />
+              <path d="M9 4v13" />
+              <path d="M15 7v13" />
+            </svg>
+            Mapa de Monitoramento
+          </a>
+        </li>
+        <li>
+          <a id="tab3" title="Compartilhamento Eficiente" href="#tab3">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-git-compare" width="24"
+              height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M6 6m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M18 18m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0" />
+              <path d="M11 6h5a2 2 0 0 1 2 2v8" />
+              <path d="M14 9l-3 -3l3 -3" />
+              <path d="M13 18h-5a2 2 0 0 1 -2 -2v-8" />
+              <path d="M10 15l3 3l-3 3" />
+            </svg>
+            Compartilhamento Eficiente
+          </a>
+        </li>
+        <li>
+          <a id="tab4" title="Alertas Proativos" href="#tab4">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bell-ringing-filled" width="24"
+              height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path
+                d="M17.451 2.344a1 1 0 0 1 1.41 -.099a12.05 12.05 0 0 1 3.048 4.064a1 1 0 1 1 -1.818 .836a10.05 10.05 0 0 0 -2.54 -3.39a1 1 0 0 1 -.1 -1.41z"
+                stroke-width="0" fill="currentColor" />
+              <path
+                d="M5.136 2.245a1 1 0 0 1 1.312 1.51a10.05 10.05 0 0 0 -2.54 3.39a1 1 0 1 1 -1.817 -.835a12.05 12.05 0 0 1 3.045 -4.065z"
+                stroke-width="0" fill="currentColor" />
+              <path
+                d="M14.235 19c.865 0 1.322 1.024 .745 1.668a3.992 3.992 0 0 1 -2.98 1.332a3.992 3.992 0 0 1 -2.98 -1.332c-.552 -.616 -.158 -1.579 .634 -1.661l.11 -.006h4.471z"
+                stroke-width="0" fill="currentColor" />
+              <path
+                d="M12 2c1.358 0 2.506 .903 2.875 2.141l.046 .171l.008 .043a8.013 8.013 0 0 1 4.024 6.069l.028 .287l.019 .289v2.931l.021 .136a3 3 0 0 0 1.143 1.847l.167 .117l.162 .099c.86 .487 .56 1.766 -.377 1.864l-.116 .006h-16c-1.028 0 -1.387 -1.364 -.493 -1.87a3 3 0 0 0 1.472 -2.063l.021 -.143l.001 -2.97a8 8 0 0 1 3.821 -6.454l.248 -.146l.01 -.043a3.003 3.003 0 0 1 2.562 -2.29l.182 -.017l.176 -.004z"
+                stroke-width="0" fill="currentColor" />
+            </svg>
+            Alertas Proativos
+          </a>
+        </li>
+        <li>
+          <a id="tab5" title="Registro de Áudio" href="#tab5">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-deezer" width="24"
+              height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 16.5h2v.5h-2z" />
+              <path d="M8 16.5h2.5v.5h-2.5z" />
+              <path d="M16 17h-2.5v-.5h2.5z" />
+              <path d="M21.5 17h-2.5v-.5h2.5z" />
+              <path d="M21.5 13h-2.5v.5h2.5z" />
+              <path d="M21.5 9.5h-2.5v.5h2.5z" />
+              <path d="M21.5 6h-2.5v.5h2.5z" />
+              <path d="M16 13h-2.5v.5h2.5z" />
+              <path d="M8 13.5h2.5v-.5h-2.5z" />
+              <path d="M8 9.5h2.5v.5h-2.5z" />
+            </svg>
+            Registro de Áudio
+          </a>
+        </li>
+        <li>
+          <a id="tab6" title="Machine Learning e IA" href="#tab6">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-input-ai" width="24" height="24"
+              viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round"
+              stroke-linejoin="round">
+              <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <path d="M20 11v-2a2 2 0 0 0 -2 -2h-12a2 2 0 0 0 -2 2v5a2 2 0 0 0 2 2h4" />
+              <path d="M14 21v-4a2 2 0 1 1 4 0v4" />
+              <path d="M14 19h4" />
+              <path d="M21 15v6" />
+            </svg>
+            Machine Learning e IA
+          </a>
+        </li>
+      </ul>
+      <div class="tab-content-wrapper">
+        <section id="tab1-content" class="tab-content">
+          <h2>Coleta de Dados de Saúde </h2>
+          <p>
+            Não é apenas um dispositivo, mas uma solução completa.
+            Ele coleta dados de saúde personalizados, como ritmo cardíaco, pressão arterial, glicose, tempo de sono,
+            quantidade de álcool no sangue e muito mais. Esses dados são registrados minuciosamente no aplicativo,
+            criando mapa detalhado dos sintomas.
           </p>
+          <img src="./assets/coleta de dados.jpg" alt="idea">
+        </section>
+        <section id="tab2-content" class="tab-content">
+          <h2>Mapa de Monitoramento</h2>
+          <p>
+            O Mapa de Monitoramento oferece uma visualização abrangente dos dados de saúde coletados, permitindo uma
+            compreensão detalhada e personalizada dos sintomas ao longo do tempo. Esse recurso exclusivo possibilita uma
+            análise holística e temporal para profissionais de saúde, promovendo uma gestão mais eficaz e proativa da
+            saúde do paciente.
+          </p>
+          <img src="./assets/mapa de monitoramento de dados.jpg" alt="product">
+        </section>
+        <section id="tab3-content" class="tab-content">
+          <h2>Compartilhamento Eficiente</h2>
+          <p>
+            O processo de Compartilhamento Eficiente permite uma transição perfeita dos dados do usuário para a conta do
+            médico. Essa integração facilita a análise especializada, garantindo que os profissionais de saúde tenham
+            acesso rápido e preciso aos dados relevantes, promovendo uma colaboração mais efetiva no cuidado ao
+            paciente.
+          </p>
+          <img src="./assets/compartilhamento e eficiencia.jpg" alt="ui">
+
+        </section>
+        <section id="tab4-content" class="tab-content">
+          <h2>Alertas Proativos</h2>
+          <p>
+            Os Alertas Proativos representam uma camada adicional de cuidado ao usuário. Emitindo notificações diante de
+            alterações significativas na saúde, o smartwatch age como um guardião, incentivando a busca imediata por
+            aconselhamento médico. Essa abordagem proativa destaca-se na prevenção e intervenção precoce.
+          </p>
+          <img src="./assets/alerta em smartwatch.jpg" alt="brain">
+
+        </section>
+        <section id="tab5-content" class="tab-content">
+          <h2>Registro de Áudio</h2>
+          <p>
+            O Registro de Áudio oferece um insight valioso durante alterações significativas na saúde. Ao incentivar o
+            usuário a registrar atividades por mensagem de voz, esse recurso proporciona dados contextuais cruciais para
+            uma compreensão mais completa do quadro de saúde, facilitando a tomada de decisões médicas informadas.
+          </p>
+          <img src="./assets/ondas sonoras.jpg" alt="engineer">
+        </section>
+        <section id="tab6-content" class="tab-content">
+          <h2>Machine Learning e IA</h2>
+          <p>
+            A integração de Machine Learning e Inteligência Artificial potencializa a análise de dados, permitindo
+            predições mais precisas e personalizadas. Essas tecnologias avançadas capacitam o smartwatch a aprender com
+            os padrões individuais de saúde, aprimorando continuamente a qualidade do cuidado oferecido e antecipando
+            necessidades futuras.
+          </p>
+          <img src="./assets/ia.jpg" alt="release">
+        </section>
       </div>
-    </section>
-    
-    <section class="background-dados">
-      <img class="relogio-dados" src="./assets/clock-7708859_1280.jpg">  
-    </section>
-  <script src="script.js"></script>
+    </div>
+  </section>
+
+  <section class="section-captacao">
+    <div class="captacao-background">
+      <div class="captacao">
+        <h3 class="titulo-captacao">Captação<br> de Recursos<br>
+        </h3>
+        <img class="icon-captacao" src="./assets/acima.png">
+        <p class="text-captacao">
+          Nossa estratégia para lançar este serviço inovador, é um projeto, envolvendo empresas
+          de software e hardware de renome, parcerias com universidades para pesquisa contínua
+          e colaborações com operadoras de seguro saúde. Com uma taxa de serviço acessível,
+          entre 50 a 100 dólares por dia, estamos prontos para transformar a saúde na rede privada.
+        </p>
+      </div>
+      <div class="text-captacao-secao">
+        <div class="text-captacao-secao-1">
+          <p>Empresa de software para
+            desenvolver o aplicativo com
+            uma empresa de hardware para
+            projetar o relógio com toda a
+            tecnologia existente.
+          </p>
+        </div>
+        <div class="text-captacao-secao-2">
+          <p>Parceria com universidades para
+            pesquisa contínua para melhorar
+            o desempenho do smartwatch na
+            coleta dos dados de saúde. </p>
+        </div>
+        <div class="text-captacao-secao-3">
+          <p>Aluguel a operadoras de seguro
+            saúde cobrando por dia pelo
+            periodo de uso, entorno de $50
+            a $100 dólares dor dia.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="comentarios">
+    <h3>Deixe sua avaliação sobre o projeto</h3>
+    <div class="discussion">
+      <div class="discussion__header">
+        <div class="authed-user">
+          <label for="name">Nome:</label>
+          <input type="text" id="name" title="Preencha com o seu Nome." required>
+          <label for="email">Email:</label>
+          <input type="email" id="email" title="Preencha com o seu Email." required>
+          <label for="avatar-input" class="avatar-label">Insira sua Foto:
+            <img id="avatar-preview" class="avatar" src="./assets/file-import.svg" alt="Avatar">
+            <input type="file" id="avatar-input" accept="image/*" style="display: none;">
+          </label>
+        </div>
+        <form id="newcomment__form">
+          <textarea id="comment-input" tabindex="1" cols="150" rows="4" minlength="5" required
+            placeholder="Escreva aqui..."></textarea>
+          <div class="newcomment__toolbar">
+            <button id="reset-button" class="button--secondary" tabindex="3" type="button">
+              Reset
+            </button>
+            <button id="confirm-button" class="button--primary" tabindex="2" type="submit">
+              Comment
+            </button>
+          </div>
+        </form>
+      </div>
+      <div class="discussion__comments" id="comment-container">
+
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="footer-line"></div>
+    <div class="footer-wrapper">
+      <section class="footer-top">
+        <div class="footer-headline">
+          <h2>Assine a nossa newsletter</h2>
+          <p>
+            Fique por dentro de nossas notícias
+          </p>
+        </div>
+        <div class="footer-subscribe">
+          <input type="email" spellcheck="false" placeholder="Your Email">
+          <button>
+            Sign Up
+          </button>
+        </div>
+      </section>
+      <div class="footer-columns">
+        <section class="footer-logo">
+          <h3>
+            <img src="./assets/logo-branco.png">
+          </h3>
+        </section>
+        <section>
+          <h3>Site</h3>
+          <ul>
+            <li>
+              <a href="./index.html" title="API">Home</a>
+            </li>
+            <li>
+              <a href="./reducao-da-mortalidade-infantil.html" title="Pricing">Mortalidade Infantil</a>
+            </li>
+            <li>
+              <a href="./doencas-transmissiveis.html" title="Documentation">Doenças Transmissíveis</a>
+            </li>
+            <li>
+              <a href="./doencas-nao-transmissiveis.html" title="Release Notes">Doenças não Transmissíveis</a>
+            </li>
+            <li>
+              <a href="./melhoria-geral-da-saude.html" title="Status">Melhoria na Saúde</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Recursos</h3>
+          <ul>
+            <li>
+              <a href="#" title="Support">Suporte</a>
+            </li>
+            <li>
+              <a href="#" title="Sitemap">Sistema</a>
+            </li>
+            <li>
+              <a href="#" title="Newsletter">Newsletter</a>
+            </li>
+            <li>
+              <a href="#" title="Help Centre">Help Center</a>
+            </li>
+            <li>
+              <a href="#" title="Investor">Investidor</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Empresa</h3>
+          <ul>
+            <li>
+              <a href="#" title="About Us">Sobre Nós</a>
+            </li>
+            <li>
+              <a href="#" title="Blog">Tecnologia</a>
+            </li>
+            <li>
+              <a href="#" title="Careers">Captação de Recursos</a>
+            </li>
+            <li>
+              <a href="#" title="Press">Mais Informações</a>
+            </li>
+            <li>
+              <a href="#" title="Contact">Contato</a>
+            </li>
+          </ul>
+        </section>
+        <section>
+          <h3>Legal</h3>
+          <ul>
+            <li>
+              <a href="#" title="Terms and services">
+                Termos
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Privacy Policy">
+                Privacidade
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Cookies">
+                Cookies
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Licenses">
+                Licença
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="footer-bottom">
+        <div class='social-links'>
+          <ul>
+            <li>
+              <a href="#" title="Instagram">
+                <img src="./assets/brand-instagram.svg" alt='Instagram'>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Linkedin">
+                <img src="./assets/brand-linkedin.svg" alt='Linkedin'>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Twitter">
+                <img src="./assets/brand-twitter.svg" alt='Twitter'>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="Facebook">
+                <img src="./assets/brand-facebook.svg" alt='Facebook'>
+              </a>
+            </li>
+            <li>
+              <a href="#" title="GitHub">
+                <img src="./assets/brand-github.svg" alt='GitHub'>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <small>© Lucas Epifanio. <span id="year"></span> Todos os direitos reservados</small>
+      </div>
+    </div>
+  </footer>
+
+  <script src="./scripts/script.js"></script>
+  <script src="./scripts/script-tabs.js"></script>
+  <script src="./scripts/script-comentario.js"></script>
 </body>
 
 </html>
