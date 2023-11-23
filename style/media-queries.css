@@ -162,7 +162,7 @@
         padding-left: 5rem;
     }
 
-    section.background-relogio-home {
+    main.background-relogio-home {
         background-size: 62rem;
     }
 
@@ -184,11 +184,11 @@
 @media (max-width: 480px) {
     .titulo img {
         width: 24rem;
-        padding-left: 7rem;
+        padding-left: 8rem;
     }
 
-    section.background-relogio-home {
-        background-size: 40rem;
+    main.background-relogio-home {
+        background-size: 43rem;
     }
 
     .chamada a {
