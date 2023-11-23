@@ -165,17 +165,6 @@
     main.background-relogio-home {
         background-size: 62rem;
     }
-
-    .logo {
-        position: absolute;
-        left: 45.5%;
-        bottom: 47rem;
-    }
-
-    .chamada a {
-        position: absolute;
-        bottom: 48rem
-    }
 }
 
 
@@ -189,11 +178,6 @@
 
     main.background-relogio-home {
         background-size: 43rem;
-    }
-
-    .chamada a {
-        bottom: 48.5rem;
-        right: 0.5rem;
     }
 
     .circle {
@@ -263,9 +247,10 @@
         width: 14rem;
     }
 
-    .logo {
-        position: absolute;
-        left: 42.5%;
-        bottom: 47rem;
+    .chamada a {
+        right: 0rem;
+        font-size: 1.1rem;
+        padding: 0rem 1rem;
     }
+
 }
