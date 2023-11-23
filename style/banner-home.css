@@ -25,7 +25,7 @@
   color: var(--green-light);
 }
 
-section.background-relogio-home {
+main.background-relogio-home {
   position: relative;
   background: var(--medium-white);
   background-image: url(../assets/background-relogio-home.png);

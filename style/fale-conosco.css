@@ -1,0 +1,30 @@
+.student-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background-color: var(--green-light);
+  }
+
+  .student-box {
+    padding: 20px;
+    border: 2px solid var(--black);
+    border-radius: 10px;
+    text-align: center;
+    background-color: var(--white);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 4rem;
+  }
+
+  .student-info h2 {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+
+  .student-info p {
+    font-size: 16px;
+    margin: 0;
+    color: var(--black);
+    padding-bottom: 5px;
+  }

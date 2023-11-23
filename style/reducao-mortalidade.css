@@ -1,0 +1,51 @@
+#main-content {
+    width: 80%;
+    max-width: 1200px;
+    margin: 40px auto;
+  }
+  
+  .page-content {
+    background-color: var(--white);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-left: 3.2rem;
+  }
+  
+  .page-content h3 {
+    font-size: 32px;
+    color: var(--black);
+  }
+  
+  .page-content h4 {
+    font-size: 24px;
+    color: var(--black);
+    margin-top: 20px;
+  }
+  
+  .page-content p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: var(--white-dark);
+  }
+
+  .page-content h5{
+    font-size: 1rem;
+    color:var(--white-dark);
+    text-align: center;
+  }
+  
+  .page-content ul {
+    margin-top: 10px;
+  }
+  
+  .page-content ul li {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+
+  .chart-container {
+    max-width: 600px;
+    margin: 20px auto;
+  }
+  

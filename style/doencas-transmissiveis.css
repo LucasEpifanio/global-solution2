@@ -1,0 +1,31 @@
+main {
+    width: 80%;
+    max-width: 800px;
+    margin: 16px auto;
+  }
+
+  h1 {
+    color: var(--black);
+    margin-left: 3rem;
+  }
+
+  .news {
+    margin-top: 20px;
+    margin-left: 3rem;
+  }
+
+  .news-item {
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #f3f3f3;
+    border-radius: 8px;
+  }
+
+  .news-title {
+    font-size: 1.2em;
+    margin-bottom: 8px;
+  }
+
+  .news-content {
+    color: var(--white-dark);
+  }

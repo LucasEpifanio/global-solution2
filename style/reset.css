@@ -3,7 +3,7 @@
   --black-dark: #0D0905;
   --medium-white: #F8F8F8;
   --white: #ffffff;
-  --white-dark: #c5c5c5;
+  --white-dark: #777;
   --green-light: #7BEB5E;
   --green: #46C326;
   --blue: #4d78c9;
@@ -29,12 +29,5 @@ body {
 }
 
 ::-webkit-scrollbar{
-  width:0.5rem;
-}
-::-webkit-scrollbar-thumb{
-  background-color: var(--green-light);
-}
-
-::-webkit-scrollbar-track{
-  background-color: transparent;
+  width:0rem;
 }

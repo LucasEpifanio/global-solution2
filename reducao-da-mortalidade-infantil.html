@@ -13,13 +13,10 @@
     rel="stylesheet">
   <link rel="stylesheet" href="./style/reset.css">
   <link rel="stylesheet" href="./style/navbar.css">
-  <link rel="stylesheet" href="./style/banner-home.css">
-  <link rel="stylesheet" href="./style/banner-preto-branco.css">
-  <link rel="stylesheet" href="./style/tabs.css">
-  <link rel="stylesheet" href="./style/banner-captacao.css">
-  <link rel="stylesheet" href="./style/comentarios.css">
+  <link rel="stylesheet" href="./style/reducao-mortalidade.css">
   <link rel="stylesheet" href="./style/media-queries.css">
   <link rel="stylesheet" href="./style/footer.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 
 <body class="collapsed">
@@ -40,7 +37,7 @@
         </li>
         <li>
           <a href="./reducao-da-mortalidade-infantil.html" title="Mortalidade Infantil" class="tooltip">
-            <img src="./assets/descer.png" alt="Mortalidade Infantil">
+            <img src="./assets/mood-look-down.svg" alt="Mortalidade Infantil">
             <span class="link hide">Redução da Mortalidade Infantil</span>
             <span class="tooltip__content">Mortalidade Infantil</span>
           </a>
@@ -54,7 +51,7 @@
         </li>
         <li>
           <a href="./doencas-nao-transmissiveis.html" title="doenças não transmissíveis" class="tooltip">
-            <img src="./assets/nao-toque.png" alt="doenças não transmissíveis">
+            <img src="./assets/pentagon-off.svg" alt="doenças não transmissíveis">
             <span class="link hide">Doenças não transmissíveis</span>
             <span class="tooltip__content">Doenças não transmissíveis</span>
           </a>
@@ -66,10 +63,53 @@
             <span class="tooltip__content">Melhoria geral da Saúde</span>
           </a>
         </li>
+        <li>
+          <a href="./fale-conosco.html" title="Fale Conosco" class="tooltip">
+            <img src="./assets/user-exclamation.svg" alt="Fale Conosco">
+            <span class="link hide">Fale Conosco</span>
+            <span class="tooltip__content">Fale Conosco</span>
+          </a>
+        </li>
       </ul>
     </div>
   </nav>
 
+  <main id="main-content">
+    <section class="page-content" id="reducao-mortalidade-infantil">
+      <h3>Redução da Mortalidade Infantil</h3>
+
+      <p>A redução da mortalidade infantil é um objetivo crucial para promover o bem-estar das crianças em todo o mundo.
+        Diversos esforços são realizados para garantir que crianças tenham acesso a cuidados adequados desde o
+        nascimento até os primeiros anos de vida.</p>
+
+      <h4>Causas da Mortalidade Infantil</h4>
+      <p>As principais causas de mortalidade infantil incluem doenças infecciosas, desnutrição, condições pré-natais e
+        falta de acesso a serviços de saúde. Programas de vacinação, cuidados pré-natais, e intervenções nutricionais
+        são essenciais para combater essas causas.</p>
+
+      <h4>Estratégias de Redução</h4>
+      <p>Para reduzir a mortalidade infantil, é fundamental implementar estratégias abrangentes que incluam:</p>
+      <ul>
+        <li>Ampliação do acesso a serviços de saúde;</li>
+        <li>Educação materna;</li>
+        <li>Campanhas de vacinação;</li>
+        <li>Combate à desnutrição infantil;</li>
+        <li>Melhoria das condições sanitárias.</li>
+      </ul>
+
+      <h4>Compromisso com a Saúde Infantil</h4>
+      <p>A promoção da saúde infantil é uma responsabilidade compartilhada por governos, organizações não governamentais
+        e comunidades. A conscientização e o apoio contínuo são essenciais para garantir que todas as crianças tenham a
+        oportunidade de crescer saudáveis e alcançar todo o seu potencial.</p>
+
+
+      <h4>Lista dos melhores países para nascer:</h4>
+      <h5>Mortes por 1.000 nascidos<br>Segundo a ONU</h5>
+      <div class="chart-container">
+        <canvas id="mortalidadeInfantilChart"></canvas>
+      </div>
+    </section>
+  </main>
 
   <footer>
     <div class="footer-line"></div>
@@ -217,8 +257,7 @@
   </footer>
 
   <script src="./scripts/script.js"></script>
-  <script src="./scripts/script-tabs.js"></script>
-  <script src="./scripts/script-comentario.js"></script>
+  <script src="./scripts/chart.js"></script>
 </body>
 
 </html>
